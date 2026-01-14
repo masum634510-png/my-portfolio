@@ -47,8 +47,6 @@
 }
 
 
-
-
 /*main style*/
 header{
     background-color: #FFF8F3;
@@ -61,7 +59,7 @@ nav{
     width: 71%;
     max-width: 1140px;
     margin: 0px auto;
-      display: flex;
+    display: flex;
     justify-content: space-between;
     list-style: none;
     align-items: center;
@@ -118,9 +116,8 @@ margin-bottom: 5px;
 #about , #skills , #resume {
     padding-top: 130px;
 
-}{
-    padding-top: 130px;
 }
+
 #about .about-container{
     width: 71%;
     max-width: 1140px;
@@ -252,4 +249,43 @@ margin-bottom: 5px;
     border: none;
     border-radius: 5px;
     color: #757575;
+}
+
+.hide{
+    display: none !important;
+}
+@media screen and (max-width:576px) {
+
+#about .about-container {
+    padding: 20px;
+}
+.about-info {
+    flex-direction: column;
+    gap: 40px;
+}
+
+ 
+.skills-container{
+        width: 95%;
+        
+     }
+.section-heading h2 {
+    font-size: 30px;
+    
+}
+
+ #about , 
+ #skills , 
+ #resume {
+      padding-top: 60px;
+
+}
+.skills-box {
+  flex-direction: column;
+}
+.skills-card{
+    max-width: 100%;
+}
+
+
 }
